@@ -138,7 +138,12 @@ def winner(board)
 end
 
 def play(board)
+<<<<<<< HEAD
   until over?(board) || won?(board)
+=======
+  gamewon = false
+  until draw?(board) == true|| won?(board).is_a?(Array)
+>>>>>>> 0353ce976c275036b86da2db1ec815dc38d105da
     turn(board)
   end
   if won?(board).is_a?(Array)
